@@ -11,11 +11,47 @@ body {
     color: aliceblue;
 }
 
-header {
+.welcome {
     font-family: 'Bungee Spice', cursive, sans-serif;
     text-align: center;
-    height: 50px;
-    font-size: 75%;
+    height: 100%;
+    font-size: 100%;
     letter-spacing: 2px;
     margin: 50px 0;
+}
+
+/* Footer section */
+footer {
+    background-image: url(../assets/images/footer_background.png);
+    min-height: 80px;
+    padding-top: 5px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer div {
+    font-size: 20px;
+    letter-spacing: 2px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+#social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    color: black;
+    margin: 10px 25px;
+    padding-top: 10px;
 }
