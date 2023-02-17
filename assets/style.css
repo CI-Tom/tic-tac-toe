@@ -28,12 +28,61 @@ html {
     margin: 50px 0;
 }
 
+/* Tic Tac Toe game area */
+.container {
+    min-height: 75vh;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#message {
+    font-size: 36px;
+    margin: 10px;
+    letter-spacing: 2px;
+}
+
+.tile {
+    width: 165px;
+    height: 165px;
+    border: 4px solid;
+    border-top: transparent;
+    border-right: transparent;
+    color: white;
+    cursor: pointer;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tile0,
+#tile3,
+#tile6 {
+    border-left: transparent;
+}
+
+#tile6,
+#tile7,
+#tile8 {
+    border-bottom: transparent;
+}
+
+.tiles {
+    font-family: 'Bungee Spice', cursive, sans-serif;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 500px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
 /* Footer section */
 footer {
     background-image: url(../assets/images/footer_background.png);
     min-height: 80px;
     padding-top: 5px;
     width: 100%;
+    position: fixed;
     left: 0;
     bottom: 0;
     display: flex;
