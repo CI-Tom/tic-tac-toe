@@ -7,38 +7,48 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: black;
-    color: aliceblue;
-    font-family: 'Peralta', cursive, sans-serif;
-}
-
 html {
     min-height: 100%;
     position: relative;
 }
 
+body {
+    font-family: 'Peralta', cursive, sans-serif;
+    color: white;
+    background-color: black;
+}
+
 /* Header section */
-.welcome {
+header {
     font-family: 'Bungee Spice', cursive, sans-serif;
     text-align: center;
-    height: 100%;
-    font-size: 100%;
+    height: 50px;
+    font-size: 150%;
     letter-spacing: 2px;
     margin: 50px 0;
 }
 
-/* Tic Tac Toe game area */
+/* Game section */
+.player-turn {
+    font-size: 28px;
+    margin: 10px;
+    padding: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.playerX {
+    color: red;
+}
+
+.playerO {
+    color: greenyellow;
+}
+
 .container {
     min-height: 75vh;
     margin: 0 auto;
     text-align: center;
-}
-
-#message {
-    font-size: 36px;
-    margin: 10px;
-    letter-spacing: 2px;
 }
 
 .tile {
@@ -72,8 +82,7 @@ html {
     display: grid;
     grid-template-columns: repeat(3, auto);
     width: 500px;
-    margin: auto;
-    margin-bottom: 50px;
+    margin: 0 auto;
 }
 
 /* Footer section */
@@ -82,9 +91,9 @@ footer {
     min-height: 80px;
     padding-top: 5px;
     width: 100%;
-    position: fixed;
     left: 0;
     bottom: 0;
+    position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -111,4 +120,54 @@ footer a {
     color: black;
     margin: 10px 25px;
     padding-top: 10px;
+}
+
+
+/* Reset or Start a new game */
+#reset {
+    font-family: 'Bungee Spice', cursive, sans-serif;
+    font-size: 28px;
+    background-color: transparent;
+}
+
+#reset:hover {
+    cursor: pointer;
+    transform: translateY(2px);
+}
+
+/* Media queries */
+@media screen and (max-width: 570px) {
+    footer div {
+        font-size: 16px;
+        margin: 0 10px;
+        letter-spacing: 1px;
+    }
+
+    footer a {
+        margin: 0 10px;
+    }
+
+    .tile {
+        width: 120px;
+        height: 120px;
+        border: 2px solid;
+        font-size: 90px;
+    }
+
+    #tiles {
+        width: 360px;
+        padding: 10px;
+    }
+
+    #tile0,
+    #tile1,
+    #tile2 {
+        border-top: transparent;
+    }
+
+    #tile2,
+    #tile5,
+    #tile8 {
+        border-right: transparent;
+    }
 }
