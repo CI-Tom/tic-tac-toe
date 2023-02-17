@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Peralta&display=swap');
 
+/* Global settings */
 * {
     margin: 0;
     padding: 0;
@@ -9,6 +10,12 @@
 body {
     background-color: black;
     color: aliceblue;
+    font-family: 'Peralta', cursive, sans-serif;
+}
+
+html {
+    min-height: 100%;
+    position: relative;
 }
 
 /* Header section */
