@@ -22,10 +22,17 @@ body {
 header {
     font-family: 'Bungee Spice', cursive, sans-serif;
     text-align: center;
-    height: 50px;
-    font-size: 150%;
+    min-height: 50px;
     letter-spacing: 2px;
     margin: 50px 0;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 48px;
 }
 
 /* Game section */
@@ -110,7 +117,7 @@ footer div {
     color: black;
 }
 
-#social-links {
+.social-links {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -154,7 +161,7 @@ footer a {
         font-size: 90px;
     }
 
-    #tiles {
+    .tiles {
         width: 360px;
         padding: 10px;
     }
